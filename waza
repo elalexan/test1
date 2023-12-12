@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>1999</title>
+<style>
+body{ background-color: white; color:black;}
+</style>
+</head>
+<body>
+
+<h1>What are you doing here?</h1>
+<p>ここで何をしているの？ 来たところに戻りなさい。</p>
+<p>:) :) :)</p>
+
+ <style>
+        body {
+            background-color: white;
+            color: black;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        #passwordInput {
+            padding: 10px;
+        }
+
+        #secretText {
+            display: none;
+            color: red;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <label for="passwordInput">Enter Password:</label>
+    <input type="password" id="passwordInput">
+    <button onclick="checkPassword()">Submit</button>
+</div>
+
+<div id="secretText">
+    <p>espero que no hayas encontrado esto.</p>
+</div>
+
+<script>
+    function checkPassword() {
+        var password = document.getElementById("passwordInput").value;
+        var secretText = document.getElementById("secretText");
+
+        if (password === "LaGrasa04") {
+            secretText.style.display = "block";
+        } else {
+            alert("Incorrect password. Try again.");
+        }
+    }
+</script>
+
+</body>
+</html>
